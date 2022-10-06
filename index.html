@@ -14,96 +14,114 @@
     <title>Livro de Artista</title>
 </head>
 <body>
+    <div  id="content" style="display: none">
+        <header id="header">
+            <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span></button>
+            <ul class="ulheader" id="menu" role="menu">
+                <li><a class="aheader" href="#Garrafas">Garrafas</a></li>
+                <li><a class="aheader" href="#Extras">Extras</a></li>
+            </ul>
+            </nav>
+                <div id="container-header">
+                    <p>Menu</p>
+                    <a id="logo" href="#">Livro de Artista</a>
 
-    <header id="header">
-        <nav id="nav">
-          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span></button>
-          <ul class="ulheader" id="menu" role="menu">
-            <li><a class="aheader" href="#Garrafas">Garrafas</a></li>
-            <li><a class="aheader" href="#Extras">Extras</a></li>
-          </ul>
-        </nav>
-            <div id="container-header">
-                <p>Menu</p>
-                <a id="logo" href="#">Livro de Artista</a>
+                </div>
+        </header>
+        <script src="./script.js"></script>
 
-            </div>
-    </header>
-    <script src="./script.js"></script>
+        <div id="dark"></div>
 
-    <div id="dark"></div>
-
-    <div class="navigation">
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/pedro_haupt_/" target="_blank">
-                    <span class="icon"><i class="fa fa-instagram" aria-hidden="true" ></i></span>
-                    <span class="title">Instagram</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMGCVfcbvXKMWqCCfnmvRCfnVPbvNzVGFctQPdFFQqKdrkDRFNhcjSzZslhPznJWxbcWhQ" target="_blank">
-                    <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                    <span class="title">Email</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
-                    <span class="title">Pedro&#160Henrique&#160Haupt</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <div id="apresentacao">
-        <div class="textos-apres">
-            <p id="nome">Olá, meu nome é Pedro Henrique Haupt.</p><br>
-            <p id="msg">E esse é meu <br>Livro de Artista <br>de 2022.</p>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/pedro_haupt_/" target="_blank">
+                        <span class="icon"><i class="fa fa-instagram" aria-hidden="true" ></i></span>
+                        <span class="title">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMGCVfcbvXKMWqCCfnmvRCfnVPbvNzVGFctQPdFFQqKdrkDRFNhcjSzZslhPznJWxbcWhQ" target="_blank">
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="title">Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                        <span class="title">Pedro&#160Henrique&#160Haupt</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <img id="livro" src="imgs/livro.png" alt="Livro">
-    </div>
 
-    <h2>Alguns dos meus desenhos</h2>
+        <div id="apresentacao">
+            <div class="textos-apres">
+                <p id="nome">Olá, meu nome é Pedro Henrique Haupt.</p><br>
+                <p id="msg">E esse é meu <br>Livro de Artista <br>de 2022.</p>
+            </div>
+            <img id="livro" src="imgs/livro.png" alt="Livro">
+        </div>
 
-    <br>
+        <div id="c-button-color">
+            <button id="btn-color" onclick="colorirImgs()" >
+                <img src="imgs/Palheta de cores.png" alt="Palheta de cores" width="40px">
+                <p id="txt-button-color">Colorir</p>
+            </button>
+            <button id="btn-color" onclick="descolorirImgs()">
+                <img src="imgs/Palheta de cores.png" alt="Palheta de cores" width="40px">
+                <p id="txt-button-color">Descolorir</p>
+            </button>
+        </div>
+        
 
-    <div class="trabalhos">
+        <h2>Alguns dos meus desenhos</h2>
+
+        <br>
+
+        <div class="trabalhos">
+                <scroll-container>
+                    <scroll-page id="Garrafas"> 
+                        <h3>Garrafas</h3>
+                    </scroll-page>
+                </scroll-container>
+
+            <div class="container-body" >
+                <div class="container">
+                    <div id="art01" class="container-align"><img class="img-projeto" src="Projetos Finalizados/1.png" alt="Cogumelo"><p>COGUMELO</p></div>
+                    <div id="art02" class="container-align"><img class="img-projeto" src="Projetos Finalizados/2.png" alt="barco"><p>BARCO</p></div>
+                    <div id="art03" class="container-align"><img class="img-projeto" src="Projetos Finalizados/3.png" alt="esfera"><p>ESFERA DE ENERGIA</p></div>
+                    <div id="art04" class="container-align"><img class="img-projeto" src="Projetos Finalizados/4.png" alt="lixo"><p>LIXO TOXICO</p></div>
+                    <div id="art05" class="container-align"><img class="img-projeto" src="Projetos Finalizados/5.png" alt="deserto"><p>DESERTO</p></div>
+                    <div id="art06" class="container-align"><img class="img-projeto" src="Projetos Finalizados/6.png" alt="casa"><p>CASA DE MADERIA</p></div>
+                    <div id="art07" class="container-align"><img class="img-projeto" src="Projetos Finalizados/7.png" alt="farol"><p>FAROL</p></div>
+                    <div id="art08" class="container-align"><img class="img-projeto" src="Projetos Finalizados/8.png" alt="rosa"><p>ROSA</p></div>
+                    <div id="art09" class="container-align"><img class="img-projeto" src="Projetos Finalizados/9.png" alt="savana"><p>SAVANA</p></div>
+                    <div id="art10" class="container-align"><img class="img-projeto" src="Projetos Finalizados/10.png" alt="outono"><p>OUTONO</p></div>
+                    <div id="art11" class="container-align"><img class="img-projeto" src="Projetos Finalizados/11.png" alt="pandeiro"><p>PANDEIRO</p></div>
+                    <div id="art12" class="container-align"><img class="img-projeto" src="Projetos Finalizados/12.png" alt="piano"><p>PIANO</p></div>
+                </div>
+            </div>
+
             <scroll-container>
-                <scroll-page id="Garrafas"> 
-                    <h3>Garrafas</h3>
+                <scroll-page id="Extras"> 
+                    <h3>Extras</h3>
                 </scroll-page>
             </scroll-container>
 
-        <div class="container-body">
-            <div class="container">
-                <div id="art01" class="container-align"><img class="img-projeto" src="Projetos Finalizados/1.png" alt="Cogumelo"><p>COGUMELO</p></div>
-                <div id="art02" class="container-align"><img class="img-projeto" src="Projetos Finalizados/2.png" alt="barco"><p>BARCO</p></div>
-                <div id="art03" class="container-align"><img class="img-projeto" src="Projetos Finalizados/3.png" alt="esfera"><p>ESFERA DE ENERGIA</p></div>
-                <div id="art04" class="container-align"><img class="img-projeto" src="Projetos Finalizados/4.png" alt="lixo"><p>LIXO TOXICO</p></div>
-                <div id="art05" class="container-align"><img class="img-projeto" src="Projetos Finalizados/5.png" alt="deserto"><p>DESERTO</p></div>
-                <div id="art06" class="container-align"><img class="img-projeto" src="Projetos Finalizados/6.png" alt="casa"><p>CASA DE MADERIA</p></div>
-                <div id="art07" class="container-align"><img class="img-projeto" src="Projetos Finalizados/7.png" alt="farol"><p>FAROL</p></div>
-                <div id="art08" class="container-align"><img class="img-projeto" src="Projetos Finalizados/8.png" alt="rosa"><p>ROSA</p></div>
-                <div id="art09" class="container-align"><img class="img-projeto" src="Projetos Finalizados/9.png" alt="savana"><p>SAVANA</p></div>
-                <div id="art10" class="container-align"><img class="img-projeto" src="Projetos Finalizados/10.png" alt="outono"><p>OUTONO</p></div>
-                <div id="art11" class="container-align"><img class="img-projeto" src="Projetos Finalizados/11.png" alt="pandeiro"><p>PANDEIRO</p></div>
-                <div id="art12" class="container-align"><img class="img-projeto" src="Projetos Finalizados/12.png" alt="piano"><p>PIANO</p></div>
+            <div class="container-body">
+                <div class="container">
+                    <div id="Extra1" class="container-align"><img class="img-projeto" src="Projetos Finalizados/casa moderna 3 (Baixa resolução).png" alt="Casa Moderna"><p>Modern House</p></div>
+                    <div id="Extra2" class="container-align"><img class="img-projeto" src="Projetos Finalizados/QUARTINHO.png" alt="Quartinho"><p>Quartinho</p></div>
+                </div>
             </div>
         </div>
-
-        <scroll-container>
-            <scroll-page id="Extras"> 
-                <h3>Extras</h3>
-            </scroll-page>
-        </scroll-container>
-
-        <div class="container-body">
-            <div class="container">
-                <div id="Extra1" class="container-align"><img class="img-projeto" src="Projetos Finalizados/casa moderna 3 (Baixa resolução).png" alt="Casa Moderna"><p>Modern House</p></div>
-                <div id="Extra2" class="container-align"><img class="img-projeto" src="Projetos Finalizados/QUARTINHO.png" alt="Quartinho"><p>Quartinho</p></div>
-            </div>
-        </div>
+    </div>
+    <div id="loading" style="display: flex">
+        <div id="c-loading"></div>
+        <p id="txt-loading">Demora um pouco, mas vai...</p>
+        
     </div>
 </body>
 </html>

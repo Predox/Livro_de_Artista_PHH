@@ -35,7 +35,53 @@ body {
 img{
     border-radius: 40px;
 }
+/*=============================================LOADING=============================================*/
 
+#loading{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+    height: 100vh;
+    transform: scale(3);
+}
+
+@media (max-width:900px) {
+    #loading{
+        transform: scale(2);
+    }
+}
+
+@media (max-width:700px){
+    #loading{
+        transform: scale(1.5);
+    }
+    
+}
+
+#c-loading{
+    animation: is-rotating 1s infinite;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #c05151;
+    border-top-color: #181818;
+    border-radius: 50%;
+    box-shadow: 0 0 0,
+    0 0 2px #c05151,
+    0 0 10px #c05151;
+}
+
+@keyframes is-rotating{
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+#txt-loading{
+    margin-left: 20px;
+    color: #e2e0dd;
+    font-family: 'Livvic', sans-serif;
+}
 
 /*=============================================NAVEGADOR=============================================*/
 
@@ -113,6 +159,41 @@ header{
 
 #header:hover {
     background-image: url(imgs/chinese-texture\ vermelho.png);
+}
+
+#c-button-color{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+#btn-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    border: 3px solid;
+    background-color: #181818;
+    border-color: #a7a7a7;
+    border-radius: 20px;
+}
+
+#btn-color:hover{
+    border: 6px solid #c05151;
+    box-shadow: 0 0 0,
+    0 0 4px #c05151,
+    0 0 20px #c05151; 
+}
+
+#txt-button-color{
+    margin-left: 20px;
+    color: #e2e0dd;
+    font-family: 'Livvic', sans-serif;
+    font-size: 30px;
 }
 
 #menu {
@@ -423,7 +504,10 @@ ul{
     transition: 1s;
 }
 
-
+.container-align-color{
+    filter: grayscale(0%);
+    transition: 1s;
+}
 
 .container-align:hover{
     filter: grayscale(0%);
