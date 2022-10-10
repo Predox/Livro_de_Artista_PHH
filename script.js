@@ -22,7 +22,7 @@ var i = setInterval(function () {
   document.getElementById("loading").style.display = "none";
   document.getElementById("content").style.display = "block";
  
-}, 8000);
+}, 1000);
 
 
 
@@ -61,4 +61,14 @@ function descolorirImgs(){
   colorir[12].setAttribute('class', 'container-align')
   colorir[13].setAttribute('class', 'container-align')
 }
+
+document.onmousedown=disableclick;
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     return false;    
+   }
+}
+
 

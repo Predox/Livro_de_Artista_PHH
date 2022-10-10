@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="gallery.css">
-    <link rel="stylesheet" href="gallery.theme.css">
-    <link rel="stylesheet" href="gallery.prefixed.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="imgs/favicon12_saC_icon.ico" type="image/x-icon" >
     <title>Livro de Artista</title>
 </head>
-<body>
+<body oncontextmenu="return false">
     <div  id="content" style="display: none">
         <header id="header">
             <nav id="nav">
@@ -48,7 +45,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="perfil.html">
                         <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
                         <span class="title">Pedro&#160Henrique&#160Haupt</span>
                     </a>
@@ -76,7 +73,7 @@
         </div>
         
 
-        <h2>Alguns dos meus desenhos</h2>
+        <h2>Algumas das minhas artes</h2>
 
         <br>
 
@@ -87,7 +84,7 @@
                     </scroll-page>
                 </scroll-container>
 
-            <div class="container-body" >
+            <div class="container-body">
                 <div class="container">
                     <div id="art01" class="container-align"><img class="img-projeto" src="Projetos Finalizados/1.png" alt="Cogumelo"><p>COGUMELO</p></div>
                     <div id="art02" class="container-align"><img class="img-projeto" src="Projetos Finalizados/2.png" alt="barco"><p>BARCO</p></div>
@@ -118,10 +115,9 @@
             </div>
         </div>
     </div>
-    <div id="loading" style="display: flex">
+    <div id="loading" style="display: flex" overflow-Y="hidden">
         <div id="c-loading"></div>
-        <p id="txt-loading">Demora um pouco, mas vai...</p>
-        
+        <p id="txt-loading">Demora um pouco, mas vai...</p>  
     </div>
 </body>
 </html>
